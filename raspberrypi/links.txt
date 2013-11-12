@@ -1,0 +1,21 @@
+Raspberry Pi links
+==================
+
+General
+-------
+http://www.raspberrypi.org
+http://elinux.org/RPi_Hub
+http://en.wikipedia.org/wiki/Raspberry_Pi
+
+Official images
+---------------
+http://www.raspberrypi.org/downloads
+
+GitHub repositories
+-------------------
+https://github.com/raspberrypi
+
+QEMU emulation
+--------------
+http://xecdesign.com/qemu-emulating-raspberry-pi-the-easy-way/
+

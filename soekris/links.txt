@@ -1,0 +1,11 @@
+Soekris links
+=============
+
+NET4801 hardware
+----------------
+http://soekris.com/products/net4801.html
+
+Linux
+-----
+http://www.brixandersen.dk/papers/net4801/net4801.html
+

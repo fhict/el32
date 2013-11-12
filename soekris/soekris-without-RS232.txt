@@ -1,0 +1,8 @@
+Soekris booting without RS232
+=============================
+Normally the Soekris only boots into the kernel when an RS232 cable is attached. You may however want it to run headless.
+This can be solved by means of the following comBIOS command:
+
+	set ConMute=enabled
+  
+Note: First remove CF card and poweron Soekris to enter comBIOS.

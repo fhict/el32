@@ -1,0 +1,31 @@
+LibUSB API
+==========
+http://libusb.sourceforge.net/api-1.0/ 
+
+1. Initialise
+- libusb_init
+- libusb_set_debug
+
+2. Search Devices
+- libusb_get_device_list
+- libusb_get_device_descriptor
+- libusb_free_device_list
+
+3. Detach/Attach Device from kernel driver (*)
+- libusb_kernel_driver_active
+- libusb_detach_kernel_driver
+- libusb_claim_interface
+
+4. Communicate with Device
+- libusb_open
+- libusb_interrupt_transfer
+- libusb_close
+
+5. Return Devices to kernel driver (*)
+- libusb_release_interface
+- libusb_attach_kernel_driver
+
+6. Finish
+- libusb_exit
+
+(*) Only necessary if the kernel contains an Xbox360 Gamepad driver (like Ubuntu does!).

@@ -1,0 +1,16 @@
+Change Soekris baudrate
+=======================
+New Soekris boards have RS232 baudrate of 19200 baud. To change this to 115200 baud. Do as follows.
+
+- Remove CF card from your Soekris board.
+- Connect Soekris board to your laptop via RS232 nulmodem cable and USB-to-serial adapter.
+- Start Terminal emulator program(e.g. putty) and set serial baudrate at 19200 baud
+- Power-on (or reset) the Soekris board (WITHOUT CompactFlash card inserted). 
+- You will see the  "comBios Monitor" starting. 
+- See strange characters? Then your Soekris board is not communicating at 19200 baud.
+- Change baudrate using following command:
+      set ConSpeed=115200
+- Check your modification using the following command:
+      show
+
+

@@ -2,7 +2,7 @@
  * de volgende code laat het ledje op de gamepad rondspinnen:
 */
 
-#include <libusb.h>
+#include <libusb-1.0/libusb.h>
 #include <stdio.h>
 
 int

@@ -2,6 +2,10 @@ LibUSB API
 ==========
 http://libusb.sourceforge.net/api-1.0/ 
 
+0. Usage
+- Include header: #include <libusb-1.0/libusb.h>
+- Compile option: -lusb-1.0
+
 1. Initialise
 - libusb_init
 - libusb_set_debug

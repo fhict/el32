@@ -1,6 +1,6 @@
 CC = i586-linux-gcc
 CFLAGS = -O2 -Wall -Werror
-LDFLAGS = -lusb
+LDFLAGS = -lusb-1.0
 HEADERS =
 SOURCES = xpadtest.c
 OBJECTS = $(SOURCES:.c=.o)

@@ -1,0 +1,8 @@
+mq_overview - overview of POSIX message queues
+http://man7.org/linux/man-pages/man7/mq_overview.7.html
+
+The Linux Programming Interface - POSIX Message Queues
+http://man7.org/tlpi/download/TLPI-52-POSIX_Message_Queues.pdf
+
+POSIX Message Queues
+http://menehune.opt.wfu.edu/Kokua/More_SGI/007-2478-008/sgi_html/ch06.html#id32730

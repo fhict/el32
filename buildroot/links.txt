@@ -1,0 +1,5 @@
+Buildroot: making Embedded Linux easy
+http://buildroot.org/
+
+The Buildroot user manual
+http://buildroot.org/downloads/manual/manual.html

@@ -1,0 +1,27 @@
+Virtual Raspberry Pi
+====================
+
+Running a Virtual Raspberry Pi using QEMU requires a suitable qemu compatible kernel. Download it first:
+
+	wget http://xecdesign.com/downloads/linux-qemu/kernel-qemu
+
+Then start QEMU with the rootfilesystem you created for the Raspberry Pi:
+
+	qemu-system-arm -M versatilepb -cpu arm1176 -m 256 -kernel kernel-qemu -append "root=/dev/sda panic=1 console=ttyAMA0" -no-reboot -serial stdio -hda output/images/rootfs.ext2 -redir tcp:2222::22 -redir tcp:8080::80 -usb -usbdevice host:<vendorID>:<productID>
+
+For Xpad the use following params:
+
+	<vendorID>:<productID> = 045e:028e
+
+To access the virtual machine using ssh:
+
+	ssh -p2222 root@localhost
+
+To copy files from/to the virtual machine
+
+	scp -p2222 helloworld root@localhost:/bin 
+
+To access it using http client (e.g. browser):
+
+	http://localhost:8080 
+

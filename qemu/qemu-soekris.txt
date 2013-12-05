@@ -3,21 +3,23 @@ Virtual Soekris
 
 Following command will boot a virtualized Soekris. In fact it is running the Soekris root filesystem on a virtualized PC.
 
-	qemu-system-i386 -kernel output/images/bzImage -append "root=/dev/sda panic=1 console=ttyS0" -no-reboot -serial stdio -hda output/images/rootfs.ext2 -redir tcp:2222::22 -redir tcp:8080::80 -usb -usbdevice host:<vendorID>:<productID>
+	qemu-system-i386 -kernel output/images/bzImage -append "root=/dev/sda panic=1 console=ttyS0" -no-reboot -serial stdio -hda output/images/rootfs.ext2 -redir tcp:2222::22 -redir tcp:8080::80
 
-For Xpad the use following params:
+Login in virtual machine and enter following command:
 
-	<vendorID>:<productID> = 045e:028e
+	udhcpc
+
+No you can access the virtual machine from any other terminal window.
 
 To access the virtual machine using ssh:
 
-	ssh -p2222 root@localhost
+	ssh -p 2222 root@localhost
 
 To copy files from/to the virtual machine
 
-	scp -p2222 helloworld root@localhost:/bin 
+	scp -P 2222 helloworld root@localhost:/bin 
 
-To access it using http client (e.g. browser):
+To access it using an http client (e.g. browser):
 
 	http://localhost:8080 
 

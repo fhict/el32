@@ -11,7 +11,7 @@ TARGET = helloworld
 all: $(TARGET)
  
 $(TARGET) : $(OBJECTS)
-	$(CC) $(CFLAGS) $(LDFLAGS) $^ -o $@
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^
 
 $(OBJECTS): $(HEADERS)
 

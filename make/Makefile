@@ -4,14 +4,14 @@ LDFLAGS =
 HEADERS = hello.h world.h
 SOURCES = hello.c world.c
 OBJECTS = $(SOURCES:.c=.o)
-TARGETS = helloworld
+TARGET = helloworld
 
 .PHONY: all clean
 
-all: $(TARGETS)
+all: $(TARGET)
  
-$(TARGETS) : $(OBJECTS)
-	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $(OBJECTS)
+$(TARGET) : $(OBJECTS)
+	$(CC) $(CFLAGS) $(LDFLAGS) $^ -o $@
 
 $(OBJECTS): $(HEADERS)
 

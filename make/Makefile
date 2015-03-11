@@ -1,4 +1,4 @@
-CC = i586-linux-gcc
+CC = gcc
 CFLAGS = -O2 -Wall -Werror
 LDFLAGS = 
 HEADERS = hello.h world.h

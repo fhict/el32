@@ -12,7 +12,7 @@ int main(int argc, char *argv[]) {
 
 	libusb_device_handle *h;
 	
-	unsigned char data[] = { 1, 3, 0x0d };
+	unsigned char data[] = { 1, 3, 0x0a };
 	int error, transferred;
 
 	libusb_init(NULL);
